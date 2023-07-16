@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shared styles */
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #131313;
+}
+
+.text-grey {
+  color: #727272;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  border: 0;
+  width: 180px;
+  height: 64px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* banner styling */
+.banner {
+  background: rgba(255, 144, 14, 0.1);
+  padding-top: 50px;
+  padding-left: 230px;
+  padding-right: 230px;
+}
+
+.nav-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.banner-content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 1rem;
+  max-width: 860px;
+  margin: 20px auto;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner {
+    padding: 50px;
+  }
+}

@@ -24,6 +24,7 @@ body {
   font-size: 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #727272;
 }
 
 .btn-primary {
@@ -111,17 +112,69 @@ nav a {
   width: 100%;
 }
 
+/* feature section styles */
+.features {
+  display: flex;
+  gap: 140px;
+  padding-left: 240px;
+  padding-right: 240px;
+  align-items: center;
+}
+
+.features .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.features .card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+
+.features .card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.features img {
+  position: relative;
+  left: 100px;
+  width: 100%;
+}
+
+.feature-text-container,
+.feature-img-container {
+  width: 50%;
+}
+
+.ten-year-badge {
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 40px;
+  max-width: 320px;
+  position: relative;
+  top: -100px;
+}
+
+.ten-year-info {
+  font-size: 1.5rem;
+}
 /* responsive design */
 
 @media screen and (max-width: 576px) {
   nav,
-  .quick-list {
+  .quick-list,
+  .features {
     flex-direction: column;
     gap: 20px;
   }
 
   .banner,
-  .quick-list {
+  .quick-list,
+  .features {
     padding: 20px;
   }
 
@@ -130,8 +183,14 @@ nav a {
     gap: 10px;
   }
   .img-container,
-  .list-container {
+  .list-container,
+  .feature-text-container,
+  .feature-img-container {
     width: 100%;
+  }
+
+  .features img {
+    position: static;
   }
 }
 
@@ -142,7 +201,11 @@ nav a {
   }
 
   .banner,
-  .quick-list {
+  .quick-list,
+  .features {
     padding: 50px;
+  }
+  .features img {
+    position: static;
   }
 }

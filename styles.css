@@ -16,6 +16,16 @@ body {
   color: #727272;
 }
 
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.section-description {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .btn-primary {
   border-radius: 8px;
   background: #ff900e;
@@ -26,6 +36,9 @@ body {
   font-weight: 600;
   color: #fff;
 }
+.orange {
+  color: #ff900e;
+}
 
 /* banner styling */
 .banner {
@@ -34,9 +47,8 @@ body {
   padding-left: 230px;
   padding-right: 230px;
 }
-
-.nav-title {
-  font-size: 2.8rem;
+.banner-title {
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -64,11 +76,6 @@ nav a {
   padding-top: 100px;
 }
 
-.banner-title {
-  font-size: 4rem;
-  font-weight: 700;
-}
-
 .banner-description {
   font-size: 1rem;
   max-width: 860px;
@@ -83,16 +90,48 @@ nav a {
   margin-right: auto;
 }
 
+/* Quick list styles */
+.quick-list {
+  display: flex;
+  gap: 70px;
+  padding: 100px 10vw;
+  align-items: center;
+}
+.img-container,
+.list-container {
+  width: 50%;
+}
+
+.img-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img-container img {
+  width: 100%;
+}
+
 /* responsive design */
 
 @media screen and (max-width: 576px) {
-  nav {
+  nav,
+  .quick-list {
     flex-direction: column;
     gap: 20px;
   }
 
-  .banner {
+  .banner,
+  .quick-list {
     padding: 20px;
+  }
+
+  .img-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .img-container,
+  .list-container {
+    width: 100%;
   }
 }
 
@@ -102,7 +141,8 @@ nav a {
     gap: 20px;
   }
 
-  .banner {
+  .banner,
+  .quick-list {
     padding: 50px;
   }
 }

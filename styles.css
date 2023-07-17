@@ -162,6 +162,47 @@ nav a {
 .ten-year-info {
   font-size: 1.5rem;
 }
+
+/* facts container styles */
+.facts-container {
+  padding-top: 50px;
+}
+.facts-text-container {
+  padding-left: 12.5vw;
+}
+
+.facts-container .cards-container {
+  display: flex;
+  gap: 6vw;
+  margin-top: 100px;
+  margin-bottom: 180px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.facts-container .card {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 40px 35px 50px 35px;
+  text-align: center;
+}
+
+.card-stat {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.facts-container .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #727272;
+}
+
 /* responsive design */
 
 @media screen and (max-width: 576px) {
@@ -192,6 +233,15 @@ nav a {
   .features img {
     position: static;
   }
+  .facts-text-container {
+    padding: 10px;
+  }
+  .facts-container .cards-container {
+    margin: 10px auto;
+  }
+  .facts-container {
+    padding-top: 0px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -207,5 +257,11 @@ nav a {
   }
   .features img {
     position: static;
+  }
+  .features {
+    gap: 100px;
+  }
+  .ten-year-badge {
+    padding: 20px;
   }
 }

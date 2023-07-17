@@ -203,6 +203,36 @@ nav a {
   color: #727272;
 }
 
+/* sponsor container style */
+.sponsor-container {
+  text-align: center;
+}
+
+.sponsor-img-container {
+  display: flex;
+  gap: 8vw;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+  flex-wrap: wrap;
+}
+
+/* footer styles */
+
+footer {
+  padding: 40px 21vw;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff4e7;
+  max-width: 1440px;
+  border: 0;
+  margin: 0 auto 100px auto;
+}
+.footer-text {
+  font-size: 1.25rem;
+  color: #424242;
+}
+
 /* responsive design */
 
 @media screen and (max-width: 576px) {
@@ -241,6 +271,15 @@ nav a {
   }
   .facts-container {
     padding-top: 0px;
+  }
+  .sponsor-container {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 40px 1vw;
   }
 }
 
